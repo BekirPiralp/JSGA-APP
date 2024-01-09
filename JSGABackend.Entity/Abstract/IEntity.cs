@@ -1,7 +1,10 @@
-﻿namespace JSGABackend.Entity.Abstract
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace JSGABackend.Entity.Abstract
 {
 	public interface IEntity
 	{
+		[Key]
 		public int Id { get; set; }
 
 		#region temel veriler
