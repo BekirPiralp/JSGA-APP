@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Concrete\Base\" />
     <Folder Include="Concrete\Other\" />
   </ItemGroup>
 
