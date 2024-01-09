@@ -8,7 +8,7 @@
 		public DateTime? KayitZamani { get; set; }
 		public DateTime? GuncellemeZamani { get; set; }
 		public DateTime? SilmeZamani { get; set; }
-		public bool SilDurum { get; set; }test
+		public bool SilDurum { get; set; }
 		#endregion
 	}
 }
