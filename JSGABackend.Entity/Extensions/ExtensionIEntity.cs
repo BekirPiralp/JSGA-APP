@@ -13,8 +13,8 @@ namespace JSGABackend.Entity.Extensions
 
 		/// <summary>
 		/// Id is not empity or zero. 
-		/// Id != 0 => return True .
-		/// Id == 0 => return False .
+		/// Id > 0 && entity isn't empity => return True .
+		/// Id <= 0 || entity isn't empity => return False .
 		/// </summary>
 		/// <param name="entity"></param>
 		/// <returns></returns>
@@ -26,7 +26,19 @@ namespace JSGABackend.Entity.Extensions
 			 * ifadesinde int değeri null olamayacağı için
 			 * çıkarılmıştır.
 			 */
-			response = !entity.isNull() && entity.Id != 0;
+			response = !entity.isNull() && entity.Id > 0;
+			return response;
+		}
+
+		/// <summary>
+		/// This is return true to Entity is not null and, entity id is less than or equals to zero
+		/// </summary>
+		/// <param name="entity"></param>
+		/// <returns></returns>
+		public static bool isNotId ( this IEntity entity)
+		{
+			bool response;
+			response = !entity.isNull() && entity.Id <= 0;
 			return response;
 		}
 
