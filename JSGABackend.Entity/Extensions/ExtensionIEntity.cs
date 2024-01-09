@@ -62,7 +62,7 @@ namespace JSGABackend.Entity.Extensions
 		public static bool isEmpity ( this IEntity entity)
 		{
 			bool response;
-			response = !entity.isNull() && (entity.Id == 0 || entity.KayitZamani == null);
+			response = !entity.isNull() && (entity.Id <= 0 || entity.KayitZamani == null);
 			return response;
 		}
 
