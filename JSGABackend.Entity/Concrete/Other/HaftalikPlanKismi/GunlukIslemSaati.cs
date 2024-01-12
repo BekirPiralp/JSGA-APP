@@ -1,7 +1,7 @@
 ﻿using JSGABackend.Entity.Concrete.Base;
 using JSGABackend.Entity.Concrete.Other.OkulKismi;
 
-namespace JSGABackend.Entity.Concrete.Other.DersAlmaVerme
+namespace JSGABackend.Entity.Concrete.Other.HaftalikPlanKismi
 {
 	public class GunlukIslemSaati : BaseEntity
 	{ 
@@ -23,4 +23,5 @@ namespace JSGABackend.Entity.Concrete.Other.DersAlmaVerme
 		Cumartesi = 6,
 		Pazar = 7
 	}
+
 }
