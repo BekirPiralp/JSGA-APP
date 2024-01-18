@@ -3,7 +3,7 @@ using System.Linq.Expressions;
 
 namespace JSGABackend.DataAccess.Abstract.Base
 {
-	public interface IEntityBaseDataAccess<TEntity> where TEntity : class, IEntity, new()
+	public interface IEntityBaseDataAccess<TEntity> where TEntity : class, IEntity
 	{
 		/**
 		 * Getirme

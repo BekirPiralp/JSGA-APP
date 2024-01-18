@@ -3,7 +3,7 @@
 namespace JSGABackend.DataAccess.Abstract.Base.EntityFramework
 {
 	public interface IEntityBaseForEntityFrameworkDataAccess<TEntity>:IEntityBaseDataAccess<TEntity>
-		where TEntity : class,IEntity,new()
+		where TEntity : class,IEntity
 	{
 
 	}
