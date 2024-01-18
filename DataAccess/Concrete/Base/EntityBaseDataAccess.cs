@@ -2,7 +2,6 @@
 using JSGABackend.Entity.Abstract;
 using JSGABackend.Entity.Extensions;
 using JSGABackend.Exceptions;
-using JSGABackend.Extensions;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
