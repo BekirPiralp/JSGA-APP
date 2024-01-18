@@ -8,11 +8,15 @@
 
   <ItemGroup>
     <Folder Include="Abstract\Other\" />
-    <Folder Include="Concrete\Base\" />
     <Folder Include="Concrete\Other\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Extensions\JSGABackend.Extensions.csproj" />
     <ProjectReference Include="..\JSGABackend.Entity\JSGABackend.Entity.csproj" />
   </ItemGroup>
 

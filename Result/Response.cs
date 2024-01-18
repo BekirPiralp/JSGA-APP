@@ -1,4 +1,4 @@
-﻿namespace Responses
+﻿namespace JSGABackend.Responses
 {
 	public class Response<T>
 	{

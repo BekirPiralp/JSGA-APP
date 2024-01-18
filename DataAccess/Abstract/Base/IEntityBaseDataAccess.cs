@@ -1,7 +1,7 @@
 ﻿using JSGABackend.Entity.Abstract;
 using System.Linq.Expressions;
 
-namespace DataAccess.Abstract.Base
+namespace JSGABackend.DataAccess.Abstract.Base
 {
 	public interface IEntityBaseDataAccess<TEntity> where TEntity : class, IEntity, new()
 	{
