@@ -1,5 +1,7 @@
 ﻿using JSGABackend.DataAccess.Abstract.Base;
 using JSGABackend.Entity.Abstract;
+using JSGABackend.Entity.Extensions;
+using JSGABackend.Exceptions;
 using JSGABackend.Extensions;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
@@ -16,7 +18,7 @@ namespace JSGABackend.DataAccess.Concrete.Base
 		{
 			List<TEntity> _response;
 
-			using(TContext context = new TContext())
+			using(TContext context = new()) // new() == new TContext()
 			{
 				DbSet<TEntity> dataBaseEntity= context.Set<TEntity>();
 
@@ -30,7 +32,7 @@ namespace JSGABackend.DataAccess.Concrete.Base
 		{
 			int _response;
 
-			using(TContext  ctx = new TContext())
+			using(TContext  ctx = new()) // new() == new TContext()
 			{
 				var dbE = ctx.Set<TEntity>();
 				
@@ -206,7 +208,15 @@ namespace JSGABackend.DataAccess.Concrete.Base
 		#region Kaydetme
 		public async Task<TEntity> CreateAsync(TEntity entity, DateTime createTime)
 		{
-			throw new ArgumentException();
+			entity.KayitZamani = createTime;
+			using(TContext context = new TContext())
+			{
+				context.Entry(entity).State = EntityState.Added;
+				int response = await context.SaveChangesAsync();
+				if (response <= 0)
+					throw new CreateException();
+			}
+			return entity;
 		}
 
 		#endregion
@@ -214,7 +224,16 @@ namespace JSGABackend.DataAccess.Concrete.Base
 		#region Günclleme
 		public async Task<TEntity> UpdateAsync(TEntity entity, DateTime updateTime)
 		{
-			throw new ArgumentException();
+			entity.GuncellemeZamani=updateTime;
+			using(TContext context = new TContext())
+			{
+				
+				context.Entry(entity).State = EntityState.Modified;
+				int response = await context.SaveChangesAsync();
+
+				if(response <= 0) throw new UpdateException();	
+			}
+			return entity;
 		}
 
 		#endregion
@@ -222,7 +241,16 @@ namespace JSGABackend.DataAccess.Concrete.Base
 		#region Silme
 		public async Task<TEntity> DeleteAsync(TEntity entity, DateTime deletedTime)
 		{
-			throw new ArgumentException();
+			if (entity.isDeleted())
+				throw new DeletedException();
+			using(TContext context = new TContext())
+			{
+				context.Entry(entity).State= EntityState.Deleted;
+				int response = await context.SaveChangesAsync();
+
+				if(response <= 0) throw new DeleteException();
+			}
+			return entity;
 		}
 
 		#endregion
