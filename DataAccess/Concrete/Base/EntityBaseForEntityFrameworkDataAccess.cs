@@ -1,4 +1,4 @@
-﻿using JSGABackend.DataAccess.Abstract.Base;
+﻿using JSGABackend.DataAccess.Abstract.Base.EntityFramework;
 using JSGABackend.Entity.Abstract;
 using JSGABackend.Entity.Extensions;
 using JSGABackend.Exceptions;
@@ -7,7 +7,7 @@ using System.Linq.Expressions;
 
 namespace JSGABackend.DataAccess.Concrete.Base
 {
-	public class EntityBaseDataAccess<TEntity, TContext> : IEntityBaseDataAccess<TEntity>
+	public class EntityBaseForEntityFrameworkDataAccess<TEntity, TContext> : IEntityBaseForEntityFrameworkDataAccess<TEntity>
 		where TEntity : class, IEntity, new()
 		where TContext : DbContext, new()
 	{
