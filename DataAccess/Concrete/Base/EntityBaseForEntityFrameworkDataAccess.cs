@@ -220,7 +220,7 @@ namespace JSGABackend.DataAccess.Concrete.Base
 
 		#endregion
 
-		#region Günclleme
+		#region Güncelleme
 		public async Task<TEntity> UpdateAsync(TEntity entity, DateTime updateTime)
 		{
 			entity.GuncellemeZamani=updateTime;
