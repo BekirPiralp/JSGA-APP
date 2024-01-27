@@ -8,7 +8,7 @@ using System.Linq.Expressions;
 namespace JSGABackend.DataAccess.Concrete.Base
 {
 	public class EntityBaseForEntityFrameworkDataAccess<TEntity, TContext> : IEntityBaseForEntityFrameworkDataAccess<TEntity>
-		where TEntity : class, IEntity, new()
+		where TEntity : class, IEntity
 		where TContext : DbContext, new()
 	{
 

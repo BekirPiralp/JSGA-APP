@@ -7,14 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Concrete\Other\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Contexts\JSGABackend.Contexts.csproj" />
     <ProjectReference Include="..\Extensions\JSGABackend.Extensions.csproj" />
     <ProjectReference Include="..\JSGABackend.Entity\JSGABackend.Entity.csproj" />
     <ProjectReference Include="..\JSGABackend.Exceptions\JSGABackend.Exceptions.csproj" />
