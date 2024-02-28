@@ -3,7 +3,7 @@ using JSGABackend.Entity.Concrete.Other.DerslikKismi;
 
 namespace JSGABackend.DataAccess.Abstract.Other.DerslikKismi
 {
-	public interface IOzelDerslik : IEntityBaseForEntityFrameworkDataAccess<OzelDerslik>
+	public interface IOzelDerslikDataAccess : IEntityBaseForEntityFrameworkDataAccess<OzelDerslik>
 	{
 	}
 }
