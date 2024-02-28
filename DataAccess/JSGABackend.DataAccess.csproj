@@ -17,8 +17,4 @@
     <ProjectReference Include="..\JSGABackend.Exceptions\JSGABackend.Exceptions.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Concrete\Other\OkulKismi\" />
-  </ItemGroup>
-
 </Project>
