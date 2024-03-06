@@ -24,11 +24,14 @@ using JSGABackend.DataAccess.Concrete.Other.PersonelKismi.PersonelCesit;
 using JSGABackend.DataAccess.Concrete.Other.PersonelKismi.PersonelUnvan;
 using JSGABackend.DataAccess.Concrete.Other.SahisKismi;
 using JSGABackend.DataAccess.Concrete.Other.SahisKismi.SahisBilgi;
-using JSGAOlusturucu;
+using AppObjectOlusturucu.Abstract;
+using AppObjectOlusturucu.Concrete;
+
+
 
 namespace JSGABackend.DataAccess.Concrete
 {
-	public class DataAccessCreateHandler : OlusuturCreateHandler, IOlusturucuCreateHandler
+	public class DataAccessCreateHandler : OlusturCreateHandler, IOlusturucuCreateHandler
 	{
 
 		public override void CreateObj()

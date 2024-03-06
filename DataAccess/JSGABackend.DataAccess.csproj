@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AppObjectOlusturucu" Version="1.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.1" />
   </ItemGroup>
 
@@ -15,7 +16,6 @@
     <ProjectReference Include="..\Extensions\JSGABackend.Extensions.csproj" />
     <ProjectReference Include="..\JSGABackend.Entity\JSGABackend.Entity.csproj" />
     <ProjectReference Include="..\JSGABackend.Exceptions\JSGABackend.Exceptions.csproj" />
-    <ProjectReference Include="..\JSGAOlusturucu\JSGAOlusturucu.csproj" />
   </ItemGroup>
 
 </Project>
