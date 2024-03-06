@@ -6,8 +6,8 @@ using JSGABackend.Entity.Concrete.Other.BirimKismi;
 namespace JSGABackend.DataAccess.Concrete.Other.BirimKismi
 {
 	public class SubeDataAccess : 
-		EntityBaseForEntityFrameworkDataAccess<SubeBilgi,EntityFrameworkContextMsSql>,
-		ISubeBilgiDataAccess
+		EntityBaseForEntityFrameworkDataAccess<Sube,EntityFrameworkContextMsSql>,
+		ISubeDataAccess
 	{
 	}
 }
