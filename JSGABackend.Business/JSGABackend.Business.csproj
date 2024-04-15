@@ -14,7 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\JSGABackend.Entity\JSGABackend.Entity.csproj" />
-    <ProjectReference Include="..\Result\JSGABackend.Responses.csproj" />
+    <ProjectReference Include="..\JSGABackend.Result\JSGABackend.Responses.csproj" />
   </ItemGroup>
 
 </Project>
