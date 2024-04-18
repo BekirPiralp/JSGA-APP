@@ -31,7 +31,11 @@ namespace JSGABackend.Business.Abstract.Base
 
 		public Task<Response<List<TEntity>>> GetAllRemoved();
 
+		public Task<Response<List<TEntity>>> GetAllNotRemoved();
+
 		public Task<Response<int>> GetRemovedCount();
+
+		public Task<Response<int>> GetNotRemovedCount();
 
 		public Task<Response<int>> GetAllTotalCount();
 

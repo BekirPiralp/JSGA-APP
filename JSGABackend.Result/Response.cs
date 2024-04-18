@@ -30,6 +30,12 @@
 			}
 		}
 
+		public T? Value{
+			get {
+				return this._result;
+			}
+		}
+
 		private string? message
 		{
 			set
@@ -46,5 +52,7 @@
 				}
 			}
 		}
+
+
 	}
 }
