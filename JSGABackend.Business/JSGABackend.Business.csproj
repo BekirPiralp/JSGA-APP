@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Abstract\Base\" />
-    <Folder Include="Abstract\Other\BirimKismi\" />
     <Folder Include="Concrete\Base\" />
     <Folder Include="Concrete\Other\" />
   </ItemGroup>
