@@ -9,12 +9,11 @@
   <ItemGroup>
     <Folder Include="Abstract\Base\" />
     <Folder Include="Concrete\Base\" />
-    <Folder Include="Concrete\Other\" />
   </ItemGroup>
 
   <ItemGroup>
   <PackageReference Include="AppObjectOlusturucu" Version="1.0.3" />
-  <PackageReference Include="QueryToExpression" Version="1.0.0" />
+  <PackageReference Include="QueryToExpression" Version="1.0.1" />
   </ItemGroup>
 
   <ItemGroup>

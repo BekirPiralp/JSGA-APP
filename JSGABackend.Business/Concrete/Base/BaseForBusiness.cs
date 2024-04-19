@@ -12,13 +12,13 @@ using System.Linq.Expressions;
 
 namespace JSGABackend.Business.Concrete.Base
 {
-    public class BaseForBusiness<TDataAccess,TEntity> : IBaseForBusiness<TEntity>
-    where TDataAccess : class, IEntityBaseDataAccess<TEntity>
-    where TEntity : class, IEntity, new()
+    public class BaseForBusiness<TIDataAccess,TEntity> : IBaseForBusiness<TEntity>
+    where TIDataAccess : class, IEntityBaseDataAccess<TEntity>
+    where TEntity : class, IEntity
     {
-        private TDataAccess _dataAccess;
+        private TIDataAccess _dataAccess;
 
-        protected TDataAccess dataAccess{
+        protected TIDataAccess dataAccess{
             get
             {
                 return this._dataAccess;
@@ -27,10 +27,10 @@ namespace JSGABackend.Business.Concrete.Base
 
         public BaseForBusiness()
         {
-            var result = Olusturucu.olustur.GetObj<TDataAccess>();
+            var result = Olusturucu.olustur.GetObj<TIDataAccess>();
 
             if(result == null)
-                throw new NullReferenceException(nameof(TDataAccess));
+                throw new NullReferenceException(nameof(TIDataAccess));
             
             this._dataAccess = result;
         }
