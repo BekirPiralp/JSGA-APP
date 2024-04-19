@@ -1,9 +1,10 @@
 ﻿using JSGABackend.Business.Abstract.Base;
 using JSGABackend.Entity.Concrete.Other.SahisKismi.SahisBilgi;
 
-namespace JSGABackend.Business;
-
-public interface IAcikAlinanPersonelBusiness : IBaseForBusiness<AcikAlinanPersonel>
+namespace JSGABackend.Business.Abstract.Other.SahisKismi.SahisBilgi
 {
+    public interface IAcikAlinanPersonelBusiness : IBaseForBusiness<AcikAlinanPersonel>
+    {
 
+    }
 }

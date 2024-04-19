@@ -1,9 +1,10 @@
 ﻿using JSGABackend.Business.Abstract.Base;
 using JSGABackend.Entity.Concrete.Other.AkademikKisim;
 
-namespace JSGABackend.Business;
-
-public interface IAkademikDonemBusiness : IBaseForBusiness<AkademikDonem>
+namespace JSGABackend.Business.Abstract.Other.AkademikKismi
 {
+    public interface IAkademikDonemBusiness : IBaseForBusiness<AkademikDonem>
+    {
 
+    }
 }

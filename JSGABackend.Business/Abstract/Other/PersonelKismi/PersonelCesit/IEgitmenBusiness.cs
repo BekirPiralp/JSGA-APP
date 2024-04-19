@@ -1,9 +1,10 @@
 ﻿using JSGABackend.Business.Abstract.Base;
 using JSGABackend.Entity.Concrete.Other.PersonelKismi.PersonelCesit;
 
-namespace JSGABackend.Business;
-
-public interface IEgitmenBusiness : IBaseForBusiness<Egitmen>
+namespace JSGABackend.Business.Abstract.Other.PersonelKismi.PersonelCesit
 {
+    public interface IEgitmenBusiness : IBaseForBusiness<Egitmen>
+    {
 
+    }
 }

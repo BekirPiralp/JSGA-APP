@@ -1,9 +1,10 @@
 ﻿using JSGABackend.Business.Abstract.Base;
 using JSGABackend.Entity.Concrete.Other.DersAlmaVermeKismi;
 
-namespace JSGABackend.Business;
-
-public interface IEgitmenDersVermeBusiness : IBaseForBusiness<EgitmenDersVerme>
+namespace JSGABackend.Business.Abstract.Other.DersAlmaVermeKismi
 {
+    public interface IEgitmenDersVermeBusiness : IBaseForBusiness<EgitmenDersVerme>
+    {
 
+    }
 }
