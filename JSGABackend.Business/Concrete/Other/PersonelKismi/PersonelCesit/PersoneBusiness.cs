@@ -4,7 +4,7 @@ using JSGABackend.Entity.Concrete.Other.PersonelKismi.PersonelCesit;
 
 namespace JSGABackend.Business;
 
-public class PersoneBusiness : BaseForBusiness< IPersonelDataAccess, Personel>, IPersonelBusiness
+public class PersonelBusiness : BaseForBusiness< IPersonelDataAccess, Personel>, IPersonelBusiness
 {
 
 }

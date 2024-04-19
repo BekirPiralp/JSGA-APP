@@ -1,6 +1,10 @@
-﻿namespace JSGABackend.Business;
+﻿using JSGABackend.Business.Concrete.Base;
+using JSGABackend.DataAccess.Abstract.Other.GuvenlikKismi;
+using JSGABackend.Entity.Concrete.Other.GuvenlikKismi;
 
-public class JetonSureBusiness
+namespace JSGABackend.Business;
+
+public class JetonSureBusiness : BaseForBusiness< IJetonSureDataAccess, JetonSure>, IJetonSureBusiness
 {
 
 }

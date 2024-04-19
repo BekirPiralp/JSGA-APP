@@ -4,7 +4,7 @@ using JSGABackend.Entity.Concrete.Other.GuvenlikKismi;
 
 namespace JSGABackend.Business;
 
-public class JetonSureBusiness : BaseForBusiness< IJetonSureDataAccess, JetonSure>, IJetonSureBusiness
+public class JetonBusiness : BaseForBusiness< IJetonDataAccess, Jeton>, IJetonBusiness
 {
 
 }
