@@ -12,8 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Contexts\JSGABackend.Contexts.csproj" />
-    <ProjectReference Include="..\Extensions\JSGABackend.Extensions.csproj" />
+    <ProjectReference Include="..\JSGABackend.Contexts\JSGABackend.Contexts.csproj" />
+    <ProjectReference Include="..\JSGABackend.Extensions\JSGABackend.Extensions.csproj" />
     <ProjectReference Include="..\JSGABackend.Entity\JSGABackend.Entity.csproj" />
     <ProjectReference Include="..\JSGABackend.Exceptions\JSGABackend.Exceptions.csproj" />
   </ItemGroup>
