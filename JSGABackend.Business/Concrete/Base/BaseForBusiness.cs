@@ -99,6 +99,27 @@ namespace JSGABackend.Business.Concrete.Base
 
 
         #region  Getirme
+
+        public async Task<Response<TEntity?>> GetLastOrDefault()
+        {
+            Response<TEntity?> response = null!;
+            try
+            {
+                var result = (await this.dataAccess.GetByFilterAsync(p=> !(p.isDeleted()))).LastOrDefault();
+
+                if (result == null)
+                    throw new NullReferenceException(typeof(TEntity).Name + " tablosunun son nesnesi getirilemedi.");
+
+                response = new(result, true);
+            }
+            catch (Exception ex)
+            {
+                response = new(ex.Message);
+            }
+
+            return response;
+        }
+
         public async Task<Response<List<TEntity>>> GetAll()
         {
             Response<List<TEntity>> response;

@@ -18,6 +18,12 @@ namespace JSGABackend.Business.Abstract.Base
 
 		public Task<Response<TEntity>> GetByID(int Id);
 
+		/// <summary>
+		/// Last item is not deleted!.
+		/// </summary>
+		/// <returns></returns>
+		public Task<Response<TEntity?>> GetLastOrDefault();
+
 		public Task<Response<List<TEntity>>> GetAll();
 
 		public Task<Response<int>>GetCount();
