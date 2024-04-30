@@ -1,6 +1,6 @@
 ﻿namespace ApplicationSettings
 {
-    public partial class ConfigurationNames 
+    public partial class ConfigurationConnectionStringNames 
     {
         public readonly static string OracleDbString = "OracleString";
         public readonly static string OracleSqlComponity = "Oracle";
