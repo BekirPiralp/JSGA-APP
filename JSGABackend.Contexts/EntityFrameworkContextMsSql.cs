@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using ApplicationSettings;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace JSGABackend.Contexts
 {
@@ -16,7 +18,13 @@ namespace JSGABackend.Contexts
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
+			optionsBuilder.UseSqlServer(
+				Configuration.create().ConfigManager.GetConnectionString(
+					ConfigurationConnectionStringNames.MsSql
+					));
 			base.OnConfiguring(optionsBuilder);
 		}
+
+		DbSet<>
 	}
 }
