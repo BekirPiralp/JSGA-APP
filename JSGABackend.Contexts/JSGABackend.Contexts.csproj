@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ApplicationSettings\ApplicationSettings.csproj" />
+    <ProjectReference Include="..\JSGABackend.Entity\JSGABackend.Entity.csproj" />
   </ItemGroup>
 
 </Project>
