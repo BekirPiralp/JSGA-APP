@@ -1,4 +1,6 @@
-﻿using JSGABackend.DataAccess.Abstract.Other.AkademiKismi;
+﻿using AppObjectOlusturucu.Abstract;
+using AppObjectOlusturucu.Concrete;
+using JSGABackend.DataAccess.Abstract.Other.AkademiKismi;
 using JSGABackend.DataAccess.Abstract.Other.BirimKismi;
 using JSGABackend.DataAccess.Abstract.Other.DersAlmaVermeKismi;
 using JSGABackend.DataAccess.Abstract.Other.DersKismi;
@@ -24,14 +26,12 @@ using JSGABackend.DataAccess.Concrete.Other.PersonelKismi.PersonelCesit;
 using JSGABackend.DataAccess.Concrete.Other.PersonelKismi.PersonelUnvan;
 using JSGABackend.DataAccess.Concrete.Other.SahisKismi;
 using JSGABackend.DataAccess.Concrete.Other.SahisKismi.SahisBilgi;
-using AppObjectOlusturucu.Abstract;
-using AppObjectOlusturucu.Concrete;
 
 
 
 namespace JSGABackend.DataAccess.Concrete
 {
-	public class DataAccessCreateHandler : OlusturCreateHandler, IOlusturucuCreateHandler
+    public class DataAccessCreateHandler : OlusturCreateHandler, IOlusturucuCreateHandler
 	{
 
 		public override void CreateObj()
