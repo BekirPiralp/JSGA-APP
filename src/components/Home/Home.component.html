@@ -17,14 +17,9 @@
             </li>
 
             <li class="nav-item nav-item-ozel">
-              <a class="nav-link" [href]="jsgaUrlString" target="_blank" >
-                <div class="Item">
-                  <img
-                    class="Img"
-                    [src]="schoolIconPath"
-                    alt=""
-                    srcset=""
-                  />
+              <a class="nav-link" [href]="jsgaUrlString" target="_blank" (click)="activatedControl($event,'JSGA')" >
+                <div id="JSGA" class="Item">
+                  <img class="Img" [src]="schoolIconPath" alt="" srcset=""/>
                   <span class="Span">JSGA</span>
                 </div>
               </a>
@@ -59,6 +54,7 @@
     <homeBody></homeBody>
     <about></about>
     <login></login>
+    <jsgaYonlendirme></jsgaYonlendirme>
     <footer class="footer">
       <img
         class="footer-logo"

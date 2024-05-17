@@ -3,12 +3,13 @@ import { HomeBodyComponent } from '../HomeBody/HomeBody.component';
 import { AboutComponent } from '../About/About.component';
 import { LoginComponent } from '../Login/Login.component';
 import $ from 'jquery';
+import { JsgaYonlendirmeComponent } from '../JsgaYonlendirme/JsgaYonlendirme.component';
 
 @Component({
   selector: 'Home',
   templateUrl: './Home.component.html',
   styleUrls: ['./Home.component.css'],
-  imports:[HomeBodyComponent,AboutComponent,LoginComponent],
+  imports:[HomeBodyComponent,AboutComponent,LoginComponent,JsgaYonlendirmeComponent],
   standalone: true
 })
 export class HomeComponent implements OnInit {
@@ -16,8 +17,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    $("about").hide();
-    $("login").hide();
+    this.Gizle();
     $("homeBody").show();
   }
 
@@ -39,17 +39,14 @@ export class HomeComponent implements OnInit {
     //location.pathname="Home/Login";
     //location.replace("Home/Login");
     $(".Item").filter(".active").removeClass("active");
-    $("about").hide();
-    $("homeBody").hide();
+    this.Gizle();
     $("login").show();
   } 
  
   public activatedControl(event:Event,str:String|undefined): void{
     //var locUrl = location.pathname;
     $(".Item").filter(".active").removeClass("active");
-    $("about").hide();
-    $("login").hide();
-    $("homeBody").hide();
+    this.Gizle();
 
     if(str !== undefined){
       switch(str){
@@ -61,9 +58,20 @@ export class HomeComponent implements OnInit {
           $("#Anasayfa").addClass("active");
           $("homeBody").show();
           break;
+        case 'JSGA':
+          $("#JSGA").addClass("active");
+          $("jsgaYonlendirme").show();
+          break;
         default:
           break;
       }
     }
+  }
+
+  private Gizle():void{
+    $("about").hide();
+    $("login").hide();
+    $("jsgaYonlendirme").hide();
+    $("homeBody").hide();
   }
 }

@@ -1,0 +1,46 @@
+.container{
+    display: flex;
+    position: relative;
+    height: 77vh;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    background-color: rgba(197, 206, 206, 0.575) !important;
+    opacity: 100% !important;
+    justify-content: center;
+    align-items: center;
+    z-index: 101;
+}
+.loading{
+    display: flex;
+    width: 610px;
+    height: 610px;
+    border-radius: 50%;
+    border-width: 24px;
+    border-style:double;
+    border-top-color: white;
+    border-bottom-color: white;
+    border-left-color: rgb(81, 219, 253);
+    border-right-color: rgb(81, 219, 253);
+    justify-content: center;
+    align-items: center;
+    animation: dondur 2s linear infinite;
+}
+@keyframes dondur {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.yonlendir{
+    display: flex;
+    position:absolute;
+    z-index: 102;
+    text-transform:capitalize;
+    font-weight: 500;
+    letter-spacing: 2px;
+    
+}
