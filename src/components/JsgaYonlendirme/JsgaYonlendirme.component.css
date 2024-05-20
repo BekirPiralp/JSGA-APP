@@ -2,7 +2,7 @@
     display: flex;
     position: relative;
     height: 77vh;
-    width: 100%;
+    width: 100% !important;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 30px;
