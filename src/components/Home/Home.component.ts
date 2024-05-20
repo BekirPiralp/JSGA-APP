@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
     this.Gizle();
     $("login").show();
 
-    this.background_img1_UrlString = "../../assets/giris.jpg";
+    this.background_img1_UrlString = "../../assets/giris4.jpg";
   } 
  
   public activatedControl(event:Event,str:String|undefined): void{
