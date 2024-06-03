@@ -1,0 +1,139 @@
+.main {
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    background-image: url('../../../assets/Background.jpg');
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   /* background-color: rgba(167, 172, 172, 0.432);*/
+    width: 25%;
+    padding: 70px;
+    border-radius: 10%;
+    box-shadow: 10px 10px 20px 1px rgba(0, 0, 0, 0.637);
+    color: white;
+    z-index: 1;
+}
+
+.container::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background:#6e6e6e50;
+    opacity: 0.7;
+    border-radius: 10%;
+    filter: blur(30px);
+    backdrop-filter: brightness(100%) ;
+    left: 0px;
+    top: 0px;
+    z-index: -5;
+}
+
+.form-control{
+    position: relative;
+    border-left: none;
+    border-right: none;
+    border-radius: 0px 10px 10px 0px;
+    background-color: transparent;
+    box-shadow: 0px 1px 5px -1px grey;
+
+    text-shadow: 1px 1px 10px  rgb(255, 0, 0) ;
+    
+
+}
+
+.form-control::placeholder{
+    color: white;
+   
+}
+
+textarea:focus, input:focus {
+    color:white;
+}
+
+.form-control:focus{
+    box-shadow: 0px 0px 10px 1px white;
+    background-color: transparent !important;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+    text-shadow: 2px 1px 3px black ;
+}
+
+label{
+    font-weight: 500;
+}
+
+span{
+    display: flex;
+    align-items: center;
+}
+
+span>img{
+    margin-left: 3px;
+    margin-right: 3px;
+    background-color: azure;
+    padding: 3px;
+    width:35px;
+    height:35px;
+    border-radius: 3px 0px 0px 3px;
+    box-shadow: 1px 0px 10px 2px white;
+}
+
+.btn{
+    position:sticky;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    text-shadow: 2px 1px 3px  rgb(3, 154, 255) ;
+}
+
+#sifreYenileSmall{
+    position:relative;
+    left: 15px;
+    top:-10px
+}
+
+#sifreYenileA{
+    text-shadow: none;
+    color:grey;
+    font-style: italic;
+    text-decoration: none;
+}
+
+#sifreYenileA:hover{
+    color: rgba(255, 255, 255, 0.658);
+    text-decoration:underline;
+    text-shadow: 1px 1px 2px red;
+
+}
+
+.uyari{
+    margin-top: 5px;
+    padding: 0px !important;
+    text-shadow: none !important;
+    color: black;
+    text-align: center;
+    font-size:small;
+}

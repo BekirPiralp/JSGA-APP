@@ -1,3 +1,32 @@
-<p>
-  OgrenciLogin works!
-</p>
+<div class="main">
+  <div class="container">
+    <div class="title">
+      <img src="../../../assets/student.png" width="100px" height="100px" alt="">
+      <p>Öğrenci Giriş</p>
+    </div>
+    <form class="form" #loginForm ="ngForm" (ngSubmit)="onSubmit()" action="">
+      <div class="form-group m-2 ">
+        <label for="username">Kullanıcı Adı</label>
+        <span>
+          <img src="../../../assets/user.png"   alt="" srcset="">
+          <input #userName="ngModel" name="user" [(ngModel)]="this.userLogin.userName" class="form-control " id="username" type="text" placeholder="username" required minlength="3" autofocus>
+        </span>
+        <div *ngIf="userName.invalid&&userName.dirty" class="uyari alert alert-danger" role="alert">
+          <small>Kullanıcı Adı Gereklidir!.</small>
+        </div>
+      </div>
+      <div class="form-group m-2">
+        <label for="password">Şifre</label>
+        <span>
+          <img src="../../../assets/password.png"  alt="" srcset="">
+          <input #userPassword="ngModel" name="password" [(ngModel)]="this.userLogin.password" class="form-control password" id="password" type="password" placeholder="password" required minlength="3" >
+        </span>
+        <div *ngIf="userPassword.invalid&&userPassword.dirty" class="uyari alert alert-danger" role="alert">
+          <small>Şifre Gereklidir!.</small>
+        </div>
+      </div>
+      <button id="giris" type="submit" class="btn btn-primary m-3" [disabled]="loginForm.invalid">Giriş</button>
+      <small for="giris" id="sifreYenileSmall" ><a id="sifreYenileA"  (click)='notKnowPassword()'>Şifremi bilmiyorum </a></small>
+    </form>
+  </div>
+</div>
