@@ -1,3 +1,18 @@
-<p>
-  Ogrenci works!
-</p>
+<header class="header">
+  <div class="profil"><img class="profilImg" src="../../../assets/user2.png" alt=""></div>
+  <div class="baslik"><h1>Ad Soyad</h1><h3>Birim</h3><H6>Sınıf</H6></div>
+  <div class="btns">
+    <img class="img" style="display:none;"  src="../../../assets/notification1.png" alt="">
+    <img class="img" src="../../../assets/setting.png" alt="">
+  </div>
+  <div class="cikis "><button class="btn btn-danger">Çıkış</button></div>
+</header>
+<nav class="navigation">
+  <ul class="nav navbar">
+    <li class="navitem active" (click)='navItemOnClick($event)'>Ana sayfa</li>
+    <li class="navitem">Dönem Bilgi</li>
+    <li class="navitem">Transkript</li>
+    <li class="navitem">Haftalık Ders Planı</li>
+    <li class="navitem">Akademik Takvim (ilgili sınıfın)</li>
+  </ul>
+</nav>
