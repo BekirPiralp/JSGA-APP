@@ -1,0 +1,117 @@
+.container{
+    margin-top: 30px;
+
+    @media  (min-height: 720px) {
+        min-height: 75vh;
+    }
+
+    /*justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;*/
+
+
+}
+
+.baslik>*{
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration:underline double;
+    text-shadow: 2px 2px pink, -2px -2px lightblue;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+thead>tr>:last-child{
+    border-radius: 0px 30px 0px 0px;
+}  
+
+thead>tr>:first-child{
+    border-radius: 30px 0px 0px 0px;
+   
+}
+
+thead>tr>th{
+    align-items: center !important;
+    justify-content: center !important;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+tbody>tr:last-child>*{
+    border: none;
+}
+tbody>tr:last-child>td:last-of-type{
+    border-radius: 0px 0px 30px 0px;
+}
+
+tbody>tr:last-child>td:first-child{
+    border-radius: 0px 0px 0px 30px;
+}
+
+tbody>tr:nth-child(2n)>*{
+    background-color: rgb(159, 241, 241);
+}
+tbody>tr:nth-child(2n-1)>*{
+    background-color: rgb(1, 173, 173);
+}
+
+tbody>tr>*{
+    color: black;
+    font-weight: 600;
+    font-size:larger;
+    font-family:'Times New Roman', Times, serif;
+}
+tbody>tr>*:first-child{
+    text-transform: capitalize;
+    text-shadow: 1px 1px 5px pink, -1px -1px 5px lightblue;
+    padding-left: 30px;
+    text-overflow: ellipsis;
+}
+thead>tr>th:first-child{
+    text-align: center;
+}
+tbody>tr:hover>*{
+
+    color: white;
+    text-shadow: none;
+}
+tbody>tr{
+    position: relative;
+    cursor:default;
+}
+
+
+
+.tableAlert{
+    position: absolute;
+    left: 0px;
+    top: -125%;
+    display: none;
+    background-color: gray;
+    min-width: 100px;
+    min-height: 15px;
+    color: white;
+    border-radius: 10px 10px;
+    font-weight: 100;
+    font-size: medium;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+}
+.tableAlert::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0px;
+    height: 0px;
+
+    border: 20px solid transparent ;
+    border-bottom: 0;
+    border-right: 0;
+    border-top-color:gray ;
+    
+    margin-left: -10px;
+	margin-bottom: -20px;
+}

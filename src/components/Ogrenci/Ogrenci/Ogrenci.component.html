@@ -9,10 +9,17 @@
 </header>
 <nav class="navigation">
   <ul class="nav navbar">
-    <li class="navitem active" (click)='navItemOnClick($event)'>Ana sayfa</li>
-    <li class="navitem">Dönem Bilgi</li>
-    <li class="navitem">Transkript</li>
-    <li class="navitem">Haftalık Ders Planı</li>
-    <li class="navitem">Akademik Takvim </li>
+    <li class="navitem active" (click)='navItemOnClick($event)' for="AnaSayfa">Ana sayfa</li>
+    <li class="navitem" for="DonemBilgi">Dönem Bilgi</li>
+    <li class="navitem" for="Transkript">Transkript</li>
+    <li class="navitem" for="HaftalikDersPlani">Haftalık Ders Planı</li>
+    <li class="navitem" for="AkademikTakvim">Akademik Takvim </li>
   </ul>
 </nav>
+<div id="govde">
+  <AnaSayfa id="AnaSayfa"></AnaSayfa>
+  <DonemBilgi id="DonemBilgi"></DonemBilgi>
+  <Transkript id="Transkript"></Transkript>
+  <HaftalikDersPlani id="HaftalikDersPlani"></HaftalikDersPlani>
+  <AkademikTakvim id="AkademikTakvim"></AkademikTakvim>
+</div>

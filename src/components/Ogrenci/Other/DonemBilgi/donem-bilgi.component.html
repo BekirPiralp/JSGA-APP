@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="baslik"><h1>2024-2025 Güz Dönemi Ders Bilgisi</h1></div>
+    <table class="table table-hover table-dark">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Ders Adı</th>
+                <th scope="col">Vize</th>
+                <th scope="col">Final</th>
+                <th scope="col">Bütünleme</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr *ngFor="let a of [].constructor(10); let i = index " id="{{i}}" scope="row" (mouseover)="this.mouseover($event,i.toString())" (mouseout)='this.mouseout($event,i.toString())'>
+                <td>dersad {{i}}</td>
+                <td>{{i*20}}</td>
+                <td>{{i*30}}</td>
+                <td>{{i*40}}</td>
+                <div class="tableAlert">dersad {{i}}</div>
+            </tr>
+            
+            <tr scope="row" id="hmm" (mouseover)="this.mouseover($event,'hmm')" (mouseout)="this.mouseout($event,'hmm')">
+                <td>Silah Bilgisi ve Atış Nazariyatı</td>
+                <td>75</td>
+                <td>80</td>
+                <td >50</td>
+                <div class="tableAlert">Silah Bilgisi ve Atış Nazariyatı</div>
+            </tr>
+            
+            
+        </tbody>
+    </table>
+</div>
