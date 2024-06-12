@@ -1,0 +1,133 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding:50px 30px;
+
+    margin-top: 40px ;
+    margin-bottom: 40px;
+
+    border-radius: 30px;
+
+    background-color: rgba(122, 122, 122, 0.212);
+    box-shadow: 3px 4px 10px black, 0px 0px 5px cyan;
+    
+    backdrop-filter: 15px;
+}
+
+.baslik{
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 1px pink, -1px -1px 1px cyan;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    letter-spacing: 3px;
+
+    user-select: none;
+}
+
+.baslik>*{
+    font-weight: 500;
+    font-size:300%;
+}
+
+tr>:first-child{
+    text-align: center;
+    font-weight: 700;
+}
+
+.thead-dark>*>*{
+    background-color: rgba(0, 0, 0, 0.877);
+    color: white;
+    
+    letter-spacing: 2px;
+    font-weight: 800;
+
+    text-align: center;
+}
+
+.thead-dark>*>*:not(:first-child){
+    min-width: 200px;
+}
+thead>*>* , tr>:first-child{
+    text-shadow: 1px 1px 1px pink, -1px -1px 1px cyan;
+}
+
+thead{
+    border-bottom: 2px solid whitesmoke;
+}
+
+thead>*{
+    border-top: none;
+}
+
+thead>*>th:first-child{
+    border-radius: 30px 0px 0px 0px;
+    border-left: none;
+    border-top: none;
+}
+
+thead>*>th:last-child{
+    border-radius: 0px 30px 0px 0px;
+    border-right: none;
+    border-top: none;
+}
+
+tbody>tr:nth-child(2n)>*{
+    background-color: rgba(51, 138, 160, 0.5);
+}
+
+tbody>tr:nth-child(2n+1)>*{
+    background-color: rgba(115, 234, 238, 0.5);
+}
+
+tbody>tr>td:not(:first-child){
+    font-weight: 400;
+    font-size: normal;
+    letter-spacing: 1px;
+}
+
+tbody>tr:last-child> td:first-child {
+    border-radius: 0px 0px 0px 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    justify-content: center;
+    border-left: none;
+    border-bottom: none;
+}
+
+tbody>tr:last-child> td:last-child {
+    border-radius: 0px 0px 30px 0px;
+    
+    padding-right: 15px;
+
+    justify-content: center;
+    border-right: none;
+    border-bottom: none;
+}
+
+tbody>tr:last-child{
+    border-bottom: none;
+}
+
+
+.table-hover>:not(caption)>*:hover{
+    background-color: gray;
+    backdrop-filter: blur(10ox);
+}
+
+.table-hover>:not(caption)>*:hover>td{
+    color: white;
+    font-size: larger;
+}
+.table-hover>:not(caption)>*:hover>td:first-child{
+    color: white;
+}
+.table-hover>:not(caption)>*:hover>td:not(:first-child){
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    
+}

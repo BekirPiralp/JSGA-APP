@@ -1,6 +1,6 @@
 .card{
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,23 +8,6 @@
     border-radius: 30px;
 }
 
-@media screen and (max-width:1919) and (min-width:0px)  {
-    .card{
-        width: 300px;
-        height: 300px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        border-radius: 30px;
-    }
-
-    .card>a>img{
-        width: 200px;
-        height: 200px;
-        margin: 10px;
-    }
-}
 
 .card>a{
     width: 100%;
@@ -37,8 +20,8 @@
 }
 
 .card>a>img{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     margin: 10px;
 }
 

@@ -14,8 +14,8 @@
 }
 .loading{
     display: flex;
-    width: 610px;
-    height: 610px;
+    min-width: 400px;
+    min-height: 400px;
     border-radius: 50%;
     border-width: 24px;
     border-style:double;

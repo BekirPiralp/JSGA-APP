@@ -26,7 +26,7 @@ export class OgrenciComponent implements OnInit {
 
     OgrenciComponent.navItemAddProperty();
     //OgrenciComponent.GovdeItemSetDisplayNone('AnaSayfa');
-    OgrenciComponent.GovdeItemSetDisplayNone('DonemBilgi');
+    OgrenciComponent.GovdeItemSetDisplayNone('HaftalikDersPlani');
      
   }
 
