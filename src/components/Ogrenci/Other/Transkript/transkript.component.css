@@ -1,0 +1,125 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(207, 207, 207, 0.582);
+    box-shadow: 0px 0px 20px 1px ;
+    padding: 30px 0px;
+    margin:30px auto;
+    border-radius: 20px;
+}
+
+.donem{
+    display: flex;
+    align-items: center;
+    margin: 30px 0px;
+    flex-direction: column;
+}
+
+.donemBaslik{
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 10px;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 7px pink, -1px -1px 3px cyan;
+}
+
+thead>tr>th{
+    text-align: left;
+}
+
+thead{
+    border-bottom: 2px solid white;
+}
+
+.table>thead>tr>th{
+    background-color: gray ;
+    color: white;
+}
+
+.table>thead>tr>th:first-child{
+    border: none;
+    border-radius: 30px 0px 0px 0px;
+    padding-left: 20px;
+}
+
+.table>thead>tr>th:last-child{
+    border: none;
+    padding-right: 20px;
+    border-radius: 0px 30px 0px 0px;
+}
+
+.table>tbody>tr:hover>td{
+    color: white;
+    background-color: rgb(39, 38, 38);
+}
+
+.table>tbody>tr:last-child>td:first-child{
+    border-bottom: none;
+    border-left: none;
+    border-radius: 0px 0px 0px 30px;
+}
+
+.table>tbody>tr:last-child>td:last-of-type{
+    border-bottom: none;
+    border-right: none;
+    border-radius: 0px 0px 30px 0px;
+}
+
+tbody>tr:nth-child(2n)>*{
+    background-color: rgb(230, 176, 185);
+}
+
+tbody>tr:nth-child(2n+1)>*{
+    background-color: rgb(179, 233, 233);
+}
+
+table>tbody>tr>td:not(:first-child){
+    text-align: center;
+}
+
+table>:not(caption)>*>*{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+table>tbody>tr{
+    position: relative;
+}
+
+.bilgiBox{
+    position: absolute;
+    display:none;
+    background-color: rgb(18, 184, 175) !important;
+    min-width: 60px;
+    min-height: 30px;
+    left: -10px;
+    bottom: 60px;
+    padding: 20px;
+
+    border:1px solid white;
+    border-radius: 10px;
+
+    color: white;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.bilgiBox::after{
+    content: '';
+    position: absolute;
+
+    left: 50%;
+    bottom: -20px;
+
+    width: 0px;
+    height: 0px;
+
+    border: 20px solid transparent;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-top-color: rgb(8, 8, 8);
+
+
+}
+

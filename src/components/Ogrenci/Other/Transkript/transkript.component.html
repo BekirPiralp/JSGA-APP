@@ -1,1 +1,44 @@
-<p>transkript works!</p>
+<div class="container">
+    <div class="donem" *ngFor="let a of [].constructor(4); let i=index;">
+        <div class="donemBaslik"><h1>2023-2024 Güz Dönemi {{i}}.Dönem</h1></div>
+        <div>
+            <table class="table table-hover">
+                <thead >
+                    <tr>
+                        <th>Ders Adı</th>
+                        <th>Ders Kodu</th>
+                        <th>Kredi</th>
+                        <th>Akts</th>
+                        <th>Katsayı</th>
+                        <th>Tür</th>
+                        <th>Vize</th>
+                        <th>Final</th>
+                        <th>Büt</th>
+                        <th>Ortalama</th>
+                        <th>Harf Notu</th>
+                        <th>Geçme Durumu</th>
+                    </tr>
+                </thead>
+                <tbody >
+                   <tr *ngFor="let b of [].constructor(10); let x=index;"  id="{{i}}-{{x}}" (mouseover)="this.mouseover($event,i+'-'+x)" (mouseout)="this.mouseout($event,i+'-'+x)" >
+                    <td>Silah Bilgisi ve atış nazariyatı {{i}}-{{x}}</td>
+                    <td>0133 {{i}}-{{x}}</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>{{(i+x)%2?'Zorunlu':'Seçmeli'}}</td>
+                    <td>80</td>
+                    <td>90</td>
+                    <td>30</td>
+                    <td>100</td>
+                    <td>AA</td>
+                    <td>{{(i+x)%2?'Geçti':'Kaldı'}}</td>
+                    <div class="bilgiBox">Silah Bilgisi ve atış nazariyatı {{i}}-{{x}}</div>
+                   </tr>
+                </tbody>
+            </table>
+            <div><h4>Dönem Ortalaması : 3.00</h4></div>
+        </div>
+    </div>
+    <div>Genel Ortalama : 3.00</div>
+</div>
