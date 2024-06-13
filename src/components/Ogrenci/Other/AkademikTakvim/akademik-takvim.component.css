@@ -1,0 +1,162 @@
+.container{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    padding-top: 30px ;
+    padding-bottom: 30px;
+
+    border-radius: 30px;
+
+    background-color: rgba(128, 128, 128, 0.274);
+    box-shadow: 3px 3px 10px black,-1px -1px 3px cyan;
+
+    backdrop-filter: blur(10px);
+}
+
+.baslik>*{
+    margin: 30px;
+    
+    font-weight: 500;
+    font-size:300%;
+    letter-spacing: 3px;
+
+    line-height: 1.2;
+    text-underline-offset: 10px;
+    text-underline-position:auto;
+    
+    text-transform: capitalize;
+    text-decoration: underline double;
+
+    text-shadow: 1px 1px 5px pink, -1px -1px 5px cyan ;
+
+    
+
+}
+
+th{
+    text-align: center;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: large;
+
+    text-shadow: 1px 1px 2px pink, -1px -1px 2px cyan ;
+
+    user-select: none;
+
+}
+
+tbody>tr>td{
+    text-align: center;
+
+    font-weight: 500;
+
+    text-transform:capitalize;
+}
+
+tbody>tr>td>*{
+    background-color: transparent;
+}
+
+.table-a tr>*{
+    background-color: rgba(115, 234, 238, 0.5);
+    border: 1px solid white;
+    padding: 5px 30px;
+
+}
+
+
+.table-a{
+    margin: 10px;
+    min-width: 600px;
+    width: 60%;
+
+    border-radius: 30px;
+
+    box-shadow: 0px 0px 15px black;
+}
+
+.table-a tr>th:first-child{
+    min-width: 104px;
+    width: 150px;
+    border-left-color: transparent;
+}
+
+.table-a tr>th:last-child, .table-a tr>td:last-child{
+    border-right-color: transparent;
+}
+
+.table-a thead tr th:first-child{
+    border-top-color: transparent;
+    border-top-left-radius: 30px;
+}
+
+.table-a thead tr th:last-child{
+    border-top-color: transparent;
+    border-top-right-radius: 30px;
+}
+
+.table-a thead tr:first-child *{
+    background-color: rgba(0, 0, 0, 0.815);
+    color: whitesmoke;
+
+    letter-spacing: 2px;
+}
+
+.table-a tbody tr:last-child th:first-child{
+    border-bottom-left-radius: 30px;
+}
+
+.table-a tbody tr:last-child td:last-child{
+    border-bottom-right-radius: 30px;
+}
+
+.table-a tbody tr:last-child *{
+    border-bottom-color: transparent;
+}
+
+
+.table-a tr:hover>*{
+    position: relative;
+    overflow: hidden;
+}
+
+.table-a tbody tr:hover>*::after{
+    content: '';
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top:0px;
+    border-radius: auto auto auto auto;
+    border: inherit;
+    background-color: rgba(0, 0, 0, 0.199);
+
+}
+
+.table-a tbody tr:nth-child(2n)>*{
+    position: relative;
+    overflow: hidden;
+}
+
+.table-a tbody tr:nth-child(2n)>*::before{
+    content: '';
+    position: absolute;
+
+    display: flex;
+    
+    width: 100%;
+    height: 100%;
+
+    left: 0px;
+    top: 0px;
+
+    background-color:rgba(0, 0, 0, 0.103);
+
+}

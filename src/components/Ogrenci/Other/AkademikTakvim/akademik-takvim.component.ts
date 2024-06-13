@@ -1,9 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'AkademikTakvim',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './akademik-takvim.component.html',
   styleUrl: './akademik-takvim.component.css'
 })

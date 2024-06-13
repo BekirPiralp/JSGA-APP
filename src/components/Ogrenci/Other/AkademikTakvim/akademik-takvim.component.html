@@ -1,1 +1,32 @@
-<p>akademik-takvim works!</p>
+<div class="container">
+    <div class="baslik"><h1>Akademik Takvim</h1></div>
+    <table class="table-a">
+        <thead>
+            <tr>
+                <th>Hafta</th>
+                <th>İçerik</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let o of [].constructor(13); let i = index" >
+                <th scope="row">{{i+1}}</th>
+                <td>xyz data {{i}}</td>
+            </tr>
+            <tr >
+                <th scope="row">14</th>
+                <td>
+                    <div style="display: grid; grid-template-columns: auto auto auto; column-gap: 3px; row-gap: 3px;">
+                        <div style=" text-align: center; border-right: 1px solid black;"> ders</div>
+                        <div style=" text-align: center; border-right: 1px solid black;"> izin</div>
+                        <div style=" text-align: center;">atat</div>
+                    </div>
+                        
+                </td>
+            </tr>
+            <tr *ngFor="let o of [].constructor(13); let i = index" >
+                <th scope="row">{{i+15}}</th>
+                <td>xyz data {{i}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

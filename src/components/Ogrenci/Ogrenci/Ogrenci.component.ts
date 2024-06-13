@@ -26,7 +26,7 @@ export class OgrenciComponent implements OnInit {
 
     OgrenciComponent.navItemAddProperty();
     //OgrenciComponent.GovdeItemSetDisplayNone('AnaSayfa');
-    OgrenciComponent.GovdeItemSetDisplayNone('HaftalikDersPlani');
+    OgrenciComponent.GovdeItemSetDisplayNone('AkademikTakvim');
      
   }
 
@@ -72,4 +72,8 @@ export class OgrenciComponent implements OnInit {
     });
   }
 
+
+  CikisClick() {
+    document.location.href="/";
+  }
 }
