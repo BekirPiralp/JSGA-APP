@@ -4,6 +4,7 @@ import { AnaSayfaComponent } from '../Other/AnaSayfa/ana-sayfa.component';
 import { DonemBilgiComponent } from '../Other/DonemBilgi/donem-bilgi.component';
 import { HaftalikDersPlaniComponent } from '../Other/Haftalik-Ders-Plani/haftalik-ders-plani.component';
 import { TranskriptComponent } from '../Other/Transkript/transkript.component';
+import * as alertify from 'alertifyjs';
 
 @Component({
   selector: 'app-Ogrenci',
@@ -15,6 +16,7 @@ import { TranskriptComponent } from '../Other/Transkript/transkript.component';
   standalone:true
 })
 export class OgrenciComponent implements OnInit {
+
 
   constructor() { }
 
@@ -42,6 +44,7 @@ export class OgrenciComponent implements OnInit {
         
     }
   }
+
 
   public static navItemRemoveOfActive():void{
     var items = document.getElementsByClassName('nav')[0].getElementsByClassName('navitem');
@@ -74,4 +77,9 @@ export class OgrenciComponent implements OnInit {
   CikisClick() {
     document.location.href="/";
   }
+
+  settingsClick() {
+    alertify.warning('Tasarlamaya devam ediyoruz...');
+  }
+
 }

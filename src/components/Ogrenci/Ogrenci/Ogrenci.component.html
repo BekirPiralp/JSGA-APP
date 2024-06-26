@@ -3,13 +3,13 @@
   <div class="baslik"><h1>Ad Soyad</h1><h3>Birim</h3><H6>Sınıf</H6></div>
   <div class="btns">
     <img class="img" style="display:none;"  src="../../../assets/notification1.png" alt="">
-    <img class="img" src="../../../assets/setting.png" alt="">
+    <img class="img" src="../../../assets/setting.png" alt="" (click)="this.settingsClick()">
   </div>
   <div class="cikis "><button class="btn btn-danger" (click)="this.CikisClick()">Çıkış</button></div>
 </header>
 <nav class="navigation">
   <ul class="nav navbar">
-    <li class="navitem active" (click)='navItemOnClick($event)' for="AnaSayfa">Ana sayfa</li>
+    <li class="navitem active" (click)='navItemOnClick($event)' for="AnaSayfa">Ana Sayfa</li>
     <li class="navitem" for="DonemBilgi">Dönem Bilgi</li>
     <li class="navitem" for="Transkript">Transkript</li>
     <li class="navitem" for="HaftalikDersPlani">Haftalık Ders Planı</li>
