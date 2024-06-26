@@ -25,9 +25,7 @@ export class OgrenciComponent implements OnInit {
     });
 
     OgrenciComponent.navItemAddProperty();
-    //OgrenciComponent.GovdeItemSetDisplayNone('AnaSayfa');
-    OgrenciComponent.GovdeItemSetDisplayNone('AkademikTakvim');
-     
+    OgrenciComponent.GovdeItemSetDisplayNone('AnaSayfa');
   }
 
   navItemOnClick(event:Event){
