@@ -7,6 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JSGABackend.Entity", "JSGAB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JSGABackend.DataAccess", "JSGABackend.DataAccess\JSGABackend.DataAccess.csproj", "{57780A2B-38E4-4A9B-A788-204D907E1EA9}"
 	ProjectSection(ProjectDependencies) = postProject
+		{05AB74AE-3797-4FDA-9387-518767B97DB7} = {05AB74AE-3797-4FDA-9387-518767B97DB7}
 		{304462B8-F820-4B8F-AC64-EE1A45750800} = {304462B8-F820-4B8F-AC64-EE1A45750800}
 	EndProjectSection
 EndProject
@@ -18,9 +19,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JSGABackend.Extensions", "J
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JSGABackend.Exceptions", "JSGABackend.Exceptions\JSGABackend.Exceptions.csproj", "{1925339D-EB68-4A9A-972D-B39E3A089E09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSGABackend.Business", "JSGABackend.Business\JSGABackend.Business.csproj", "{1E31A3E5-7FED-46D5-A2C6-157B361DCC21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JSGABackend.Business", "JSGABackend.Business\JSGABackend.Business.csproj", "{1E31A3E5-7FED-46D5-A2C6-157B361DCC21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSGABackend.Security", "JSGABackend.Security\JSGABackend.Security.csproj", "{AE29C893-CEFB-4378-8601-5872E953ED85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JSGABackend.Security", "JSGABackend.Security\JSGABackend.Security.csproj", "{AE29C893-CEFB-4378-8601-5872E953ED85}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JSGABackend.WebApi", "JSGABackend.WebApi\JSGABackend.WebApi.csproj", "{89E1D959-EBFA-44FC-B819-281F71FF38F6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationSettings", "ApplicationSettings\ApplicationSettings.csproj", "{55A31AE4-8D7E-44B3-9870-13BF9697460C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -60,6 +65,14 @@ Global
 		{AE29C893-CEFB-4378-8601-5872E953ED85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE29C893-CEFB-4378-8601-5872E953ED85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE29C893-CEFB-4378-8601-5872E953ED85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89E1D959-EBFA-44FC-B819-281F71FF38F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89E1D959-EBFA-44FC-B819-281F71FF38F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89E1D959-EBFA-44FC-B819-281F71FF38F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89E1D959-EBFA-44FC-B819-281F71FF38F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55A31AE4-8D7E-44B3-9870-13BF9697460C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55A31AE4-8D7E-44B3-9870-13BF9697460C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55A31AE4-8D7E-44B3-9870-13BF9697460C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55A31AE4-8D7E-44B3-9870-13BF9697460C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
