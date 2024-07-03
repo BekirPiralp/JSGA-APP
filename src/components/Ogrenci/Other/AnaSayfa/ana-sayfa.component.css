@@ -1,0 +1,44 @@
+.contain{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+}
+
+.article,.aside{
+    display: flex;
+    margin-top:10px;
+    margin-bottom: 10px;
+    padding: 10px;
+
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.article{
+    position: relative;
+    flex:4;
+    margin-left: 10px;
+}
+
+.article::after{
+    content: "";
+    width: 0px;
+    height:100%;
+    position: absolute;
+    right:0px;
+    top: 0px;
+    margin: 15px;
+    box-shadow: 2px 0px 3px 3px rgb(149, 245, 245),-2px 0px 10px 5px pink;
+}
+
+
+
+
+.aside{
+    flex: 1;
+    margin-right: 10px;
+}
