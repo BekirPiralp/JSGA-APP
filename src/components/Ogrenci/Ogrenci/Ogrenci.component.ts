@@ -5,6 +5,7 @@ import { DonemBilgiComponent } from '../Other/DonemBilgi/donem-bilgi.component';
 import { HaftalikDersPlaniComponent } from '../Other/Haftalik-Ders-Plani/haftalik-ders-plani.component';
 import { TranskriptComponent } from '../Other/Transkript/transkript.component';
 import * as alertify from 'alertifyjs';
+import { PlatformLocation } from '@angular/common';
 
 @Component({
   selector: 'app-Ogrenci',
@@ -18,7 +19,16 @@ import * as alertify from 'alertifyjs';
 export class OgrenciComponent implements OnInit {
 
 
-  constructor() { }
+  constructor(private platformLocation: PlatformLocation) {
+
+    //back button set null
+    history.back
+    history.pushState(null,"",location.href);
+    platformLocation.onPopState(()=>{
+      history.pushState(null,'',location.href);
+      return false;
+    });
+   }
 
   ngOnInit() {
     var items = document.getElementsByClassName('nav')[0].getElementsByClassName('navitem');
